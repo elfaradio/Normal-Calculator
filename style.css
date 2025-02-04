@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7d9d9;
+}
+#display {
+  width: 90%;
+  height: 70px; /* Increase height */
+  font-size: 2em; /* Increase font size */
+  text-align: right;
+  margin-bottom: 15px; /* Increase spacing */
+  padding: 15px; /* More padding for better appearance */
+  border: 2px solid #ccc; /* Slightly thicker border */
+  border-radius: 8px; /* More rounded corners */
+}
+#Calc {
+  background: #100f0f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(26, 224, 42);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.btc {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  background: #151d26;
+  color: white;
+  border-radius: 5px;
+  cursor: grabbing;
+  font-weight: bolder;
+  font-style: oblique;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.1s;
+}
+.btc:hover {
+  background: #0056b3;
+}
+
+.btc:active {
+  transform: scale(0.95);
+  background: #00408a;
+}
+
+.clicked {
+  animation: buttonFlash 0.3s ease-in-out;
+}
+
+@keyframes buttonFlash {
+  0% {
+    background: #ffcc00;
+    transform: scale(1.1);
+  }
+  50% {
+    background: #ffaa00;
+  }
+  100% {
+    background: #007bff;
+    transform: scale(1);
+  }
+}

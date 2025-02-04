@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="Calc">
+      <input type="text" id="display" readonly />
+      <div class="bt">
+        <button class="btc" onclick="clrDisplay(); Effect(this);">C</button>
+        <button class="btc" onclick="add('1'); Effect(this);">1</button>
+        <button class="btc" onclick="add('2'); Effect(this);">2</button>
+        <button class="btc" onclick="add('+'); Effect(this);">+</button>
+        <button class="btc" onclick="add('3'); Effect(this);">3</button>
+        <button class="btc" onclick="add('4'); Effect(this);">4</button>
+        <button class="btc" onclick="add('-'); Effect(this);">-</button>
+        <button class="btc" onclick="add('5'); Effect(this);">5</button>
+        <button class="btc" onclick="add('6'); Effect(this);">6</button>
+        <button class="btc" onclick="add('*'); Effect(this);">*</button>
+        <button class="btc" onclick="add('7'); Effect(this);">7</button>
+        <button class="btc" onclick="add('8'); Effect(this);">8</button>
+        <button class="btc" onclick="add('9'); Effect(this);">9</button>
+        <button class="btc" onclick="add('/'); Effect(this);">/</button>
+        <button class="btc" onclick="add('0'); Effect(this);">0</button>
+        <button class="btc" onclick="add('.'); Effect(this);">.</button>
+        <button class="btc" onclick="calcans(); Effect(this);">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
